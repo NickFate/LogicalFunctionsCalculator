@@ -11,15 +11,12 @@ namespace LogicalFunctionsCalculator
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
-        //[STAThread]
+        [STAThread]
         static void Main()
         {
-            /*Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());*/
-
-            Classes.Parser parser = new Classes.Parser();
-            Console.WriteLine(parser.GetAnswer("true and false and true"));
+            Application.Run(new Form1());
         }
     }
 }

@@ -31,8 +31,8 @@ namespace LogicalFunctionsCalculator
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Input = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Input = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -69,16 +69,6 @@ namespace LogicalFunctionsCalculator
             this.panel1.Size = new System.Drawing.Size(434, 124);
             this.panel1.TabIndex = 0;
             // 
-            // Input
-            // 
-            this.Input.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Input.Location = new System.Drawing.Point(0, 0);
-            this.Input.Name = "Input";
-            this.Input.Size = new System.Drawing.Size(434, 40);
-            this.Input.TabIndex = 0;
-            this.Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -89,6 +79,16 @@ namespace LogicalFunctionsCalculator
             this.label1.Size = new System.Drawing.Size(206, 73);
             this.label1.TabIndex = 1;
             this.label1.Text = " False";
+            // 
+            // Input
+            // 
+            this.Input.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Input.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Input.Location = new System.Drawing.Point(0, 0);
+            this.Input.Name = "Input";
+            this.Input.Size = new System.Drawing.Size(434, 40);
+            this.Input.TabIndex = 0;
+            this.Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel1
             // 
@@ -116,7 +116,7 @@ namespace LogicalFunctionsCalculator
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 94);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "scs";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -126,7 +126,7 @@ namespace LogicalFunctionsCalculator
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 94);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "far";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -136,7 +136,7 @@ namespace LogicalFunctionsCalculator
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 94);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "c";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -146,7 +146,7 @@ namespace LogicalFunctionsCalculator
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 94);
             this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
+            this.button4.Text = "ce";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
@@ -165,7 +165,7 @@ namespace LogicalFunctionsCalculator
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(434, 100);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
@@ -176,7 +176,7 @@ namespace LogicalFunctionsCalculator
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(102, 94);
             this.button5.TabIndex = 0;
-            this.button5.Text = "button5";
+            this.button5.Text = "and";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -186,7 +186,7 @@ namespace LogicalFunctionsCalculator
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(102, 94);
             this.button6.TabIndex = 1;
-            this.button6.Text = "button6";
+            this.button6.Text = "or";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -196,7 +196,7 @@ namespace LogicalFunctionsCalculator
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(102, 94);
             this.button7.TabIndex = 2;
-            this.button7.Text = "button7";
+            this.button7.Text = "imp";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -206,7 +206,7 @@ namespace LogicalFunctionsCalculator
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(104, 94);
             this.button8.TabIndex = 3;
-            this.button8.Text = "button8";
+            this.button8.Text = "eqv";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
@@ -235,7 +235,7 @@ namespace LogicalFunctionsCalculator
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(102, 94);
             this.button9.TabIndex = 0;
-            this.button9.Text = "button9";
+            this.button9.Text = "true";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -245,7 +245,7 @@ namespace LogicalFunctionsCalculator
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(102, 94);
             this.button10.TabIndex = 1;
-            this.button10.Text = "button10";
+            this.button10.Text = "false";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -255,7 +255,7 @@ namespace LogicalFunctionsCalculator
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(102, 94);
             this.button11.TabIndex = 2;
-            this.button11.Text = "button11";
+            this.button11.Text = "not";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -265,7 +265,7 @@ namespace LogicalFunctionsCalculator
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(104, 94);
             this.button12.TabIndex = 3;
-            this.button12.Text = "button12";
+            this.button12.Text = "xor";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
@@ -292,7 +292,7 @@ namespace LogicalFunctionsCalculator
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(102, 94);
             this.button13.TabIndex = 0;
-            this.button13.Text = "button13";
+            this.button13.Text = "(";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -302,17 +302,18 @@ namespace LogicalFunctionsCalculator
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(102, 94);
             this.button14.TabIndex = 1;
-            this.button14.Text = "button14";
+            this.button14.Text = ")";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
             this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.Location = new System.Drawing.Point(219, 3);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(212, 94);
             this.button15.TabIndex = 0;
-            this.button15.Text = "button15";
+            this.button15.Text = "=";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // Calculator

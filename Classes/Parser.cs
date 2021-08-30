@@ -21,8 +21,9 @@ namespace LogicalFunctionsCalculator.Classes
 
         private string Parse()
         {
-            string ans = this.Text;
+            string ans = this.Text.Trim();
 
+            int iteration = 0;
             while (true) // для обновления с возможностью использования скобок
             {
                 /*if (ans.IndexOf("(") > -1)
@@ -51,6 +52,12 @@ namespace LogicalFunctionsCalculator.Classes
                 {
                     break;
                 }
+                if (iteration >= 5)
+                {
+                    return "Все погано";
+                }
+                iteration++;
+
             }
             
             return ans;

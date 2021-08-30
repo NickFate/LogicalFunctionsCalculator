@@ -28,7 +28,7 @@ namespace LogicalFunctionsCalculator
         private void Buttons(object sender)
         {
             Button a = sender as Button;
-            Input.Text += " " + a.Text;
+            Input.Text += a.Text + " ";
         }
 
         private void EquallyButton_Click(object sender, EventArgs e)
@@ -81,11 +81,19 @@ namespace LogicalFunctionsCalculator
             Buttons(sender);
         }
 
-        private void CButton_Click(object sender, EventArgs e)
+        private void CButton_Click(object sender, EventArgs e) // можно оптимизировать
         {
-            foreach (string i in new string[] { }) // заготовка
-            {
+            string[] ms = new string[] { "true ", "false ", "or ", "xor ", "and ", "not ", " eqv", "imp ", "scs ", "par " };
 
+            foreach (string i in ms)
+            {
+                if (Input.Text.EndsWith(i))
+                {
+                    string ext = Input.Text.Substring(0, Input.Text.Length - i.Length);
+                    Input.Text = ext;
+
+                    break;
+                }
             }
         }
 

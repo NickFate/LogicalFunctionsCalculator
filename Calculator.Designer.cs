@@ -34,18 +34,18 @@ namespace LogicalFunctionsCalculator
             this.label1 = new System.Windows.Forms.Label();
             this.Input = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.XORButton = new System.Windows.Forms.Button();
+            this.NOTButton = new System.Windows.Forms.Button();
             this.FalseButton = new System.Windows.Forms.Button();
             this.TrueButton = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.EQVButton = new System.Windows.Forms.Button();
+            this.IMPButton = new System.Windows.Forms.Button();
+            this.ORButton = new System.Windows.Forms.Button();
+            this.ANDButton = new System.Windows.Forms.Button();
+            this.CEButton = new System.Windows.Forms.Button();
+            this.CButton = new System.Windows.Forms.Button();
+            this.PARButton = new System.Windows.Forms.Button();
+            this.SCSButton = new System.Windows.Forms.Button();
             this.EquallyButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -88,18 +88,18 @@ namespace LogicalFunctionsCalculator
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.button12, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button11, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.XORButton, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.NOTButton, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.FalseButton, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.TrueButton, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EQVButton, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.IMPButton, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ORButton, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ANDButton, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CEButton, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.CButton, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.PARButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.SCSButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.EquallyButton, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 124);
@@ -112,25 +112,27 @@ namespace LogicalFunctionsCalculator
             this.tableLayoutPanel1.Size = new System.Drawing.Size(434, 400);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // button12
+            // XORButton
             // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button12.Location = new System.Drawing.Point(327, 203);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(104, 94);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.XORButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XORButton.Location = new System.Drawing.Point(327, 203);
+            this.XORButton.Name = "XORButton";
+            this.XORButton.Size = new System.Drawing.Size(104, 94);
+            this.XORButton.TabIndex = 12;
+            this.XORButton.Text = "xor";
+            this.XORButton.UseVisualStyleBackColor = true;
+            this.XORButton.Click += new System.EventHandler(this.XORButton_Click);
             // 
-            // button11
+            // NOTButton
             // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.Location = new System.Drawing.Point(219, 203);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(102, 94);
-            this.button11.TabIndex = 11;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.NOTButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NOTButton.Location = new System.Drawing.Point(219, 203);
+            this.NOTButton.Name = "NOTButton";
+            this.NOTButton.Size = new System.Drawing.Size(102, 94);
+            this.NOTButton.TabIndex = 11;
+            this.NOTButton.Text = "not";
+            this.NOTButton.UseVisualStyleBackColor = true;
+            this.NOTButton.Click += new System.EventHandler(this.NOTButton_Click);
             // 
             // FalseButton
             // 
@@ -154,85 +156,93 @@ namespace LogicalFunctionsCalculator
             this.TrueButton.UseVisualStyleBackColor = true;
             this.TrueButton.Click += new System.EventHandler(this.TrueButton_Click);
             // 
-            // button8
+            // EQVButton
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.Location = new System.Drawing.Point(327, 103);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 94);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.EQVButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EQVButton.Location = new System.Drawing.Point(327, 103);
+            this.EQVButton.Name = "EQVButton";
+            this.EQVButton.Size = new System.Drawing.Size(104, 94);
+            this.EQVButton.TabIndex = 8;
+            this.EQVButton.Text = "eqv";
+            this.EQVButton.UseVisualStyleBackColor = true;
+            this.EQVButton.Click += new System.EventHandler(this.EQVButton_Click);
             // 
-            // button7
+            // IMPButton
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(219, 103);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(102, 94);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.IMPButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IMPButton.Location = new System.Drawing.Point(219, 103);
+            this.IMPButton.Name = "IMPButton";
+            this.IMPButton.Size = new System.Drawing.Size(102, 94);
+            this.IMPButton.TabIndex = 7;
+            this.IMPButton.Text = "imp";
+            this.IMPButton.UseVisualStyleBackColor = true;
+            this.IMPButton.Click += new System.EventHandler(this.IMPButton_Click);
             // 
-            // button6
+            // ORButton
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Location = new System.Drawing.Point(111, 103);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(102, 94);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ORButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ORButton.Location = new System.Drawing.Point(111, 103);
+            this.ORButton.Name = "ORButton";
+            this.ORButton.Size = new System.Drawing.Size(102, 94);
+            this.ORButton.TabIndex = 6;
+            this.ORButton.Text = "or";
+            this.ORButton.UseVisualStyleBackColor = true;
+            this.ORButton.Click += new System.EventHandler(this.ORButton_Click);
             // 
-            // button5
+            // ANDButton
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(3, 103);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 94);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ANDButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ANDButton.Location = new System.Drawing.Point(3, 103);
+            this.ANDButton.Name = "ANDButton";
+            this.ANDButton.Size = new System.Drawing.Size(102, 94);
+            this.ANDButton.TabIndex = 5;
+            this.ANDButton.Text = "and";
+            this.ANDButton.UseVisualStyleBackColor = true;
+            this.ANDButton.Click += new System.EventHandler(this.ANDButton_Click);
             // 
-            // button4
+            // CEButton
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(327, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 94);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.CEButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CEButton.Location = new System.Drawing.Point(327, 3);
+            this.CEButton.Name = "CEButton";
+            this.CEButton.Size = new System.Drawing.Size(104, 94);
+            this.CEButton.TabIndex = 4;
+            this.CEButton.Text = "CE";
+            this.CEButton.UseVisualStyleBackColor = true;
+            this.CEButton.Click += new System.EventHandler(this.CEButton_Click);
             // 
-            // button3
+            // CButton
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(219, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 94);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.CButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CButton.Location = new System.Drawing.Point(219, 3);
+            this.CButton.Name = "CButton";
+            this.CButton.Size = new System.Drawing.Size(102, 94);
+            this.CButton.TabIndex = 3;
+            this.CButton.Text = "C";
+            this.CButton.UseVisualStyleBackColor = true;
+            this.CButton.Click += new System.EventHandler(this.CButton_Click);
             // 
-            // button2
+            // PARButton
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(111, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 94);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.PARButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PARButton.Location = new System.Drawing.Point(111, 3);
+            this.PARButton.Name = "PARButton";
+            this.PARButton.Size = new System.Drawing.Size(102, 94);
+            this.PARButton.TabIndex = 2;
+            this.PARButton.Text = "par";
+            this.PARButton.UseVisualStyleBackColor = true;
+            this.PARButton.Click += new System.EventHandler(this.PARButton_Click);
             // 
-            // button1
+            // SCSButton
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 94);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SCSButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SCSButton.Location = new System.Drawing.Point(3, 3);
+            this.SCSButton.Name = "SCSButton";
+            this.SCSButton.Size = new System.Drawing.Size(102, 94);
+            this.SCSButton.TabIndex = 1;
+            this.SCSButton.Text = "scs";
+            this.SCSButton.UseVisualStyleBackColor = true;
+            this.SCSButton.Click += new System.EventHandler(this.SCSButton_Click);
             // 
             // EquallyButton
             // 
@@ -269,18 +279,18 @@ namespace LogicalFunctionsCalculator
         private System.Windows.Forms.TextBox Input;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button XORButton;
+        private System.Windows.Forms.Button NOTButton;
         private System.Windows.Forms.Button FalseButton;
         private System.Windows.Forms.Button TrueButton;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button EQVButton;
+        private System.Windows.Forms.Button IMPButton;
+        private System.Windows.Forms.Button ORButton;
+        private System.Windows.Forms.Button ANDButton;
+        private System.Windows.Forms.Button CEButton;
+        private System.Windows.Forms.Button CButton;
+        private System.Windows.Forms.Button PARButton;
+        private System.Windows.Forms.Button SCSButton;
         private System.Windows.Forms.Button EquallyButton;
     }
 }

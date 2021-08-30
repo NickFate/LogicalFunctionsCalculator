@@ -40,5 +40,58 @@ namespace LogicalFunctionsCalculator
         {
             Buttons(sender);
         }
+
+        private void NOTButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void XORButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void ANDButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void ORButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void IMPButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void EQVButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void SCSButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void PARButton_Click(object sender, EventArgs e)
+        {
+            Buttons(sender);
+        }
+
+        private void CButton_Click(object sender, EventArgs e)
+        {
+            foreach (string i in new string[] { }) // заготовка
+            {
+
+            }
+        }
+
+        private void CEButton_Click(object sender, EventArgs e)
+        {
+            Input.Text = "";
+        }
     }
 }

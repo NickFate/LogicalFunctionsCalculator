@@ -146,24 +146,24 @@ namespace LogicalFunctionsCalculator.Classes
         }
         private string SchaeffersStroke(string text)
         {
-            if (text.IndexOf(" scs ") > -1)
+            if (text.IndexOf(" nand ") > -1)
             {
-                text = text.Replace("false scs false", "true");
-                text = text.Replace("false scs true", "true");
-                text = text.Replace("true scs false", "true");
-                text = text.Replace("true scs true", "false");
+                text = text.Replace("false nand false", "true");
+                text = text.Replace("false nand true", "true");
+                text = text.Replace("true nand false", "true");
+                text = text.Replace("true nand true", "false");
             }
 
             return text;
         }
         private string PeircesArrow(string text)
         {
-            if (text.IndexOf(" par ") > -1)
+            if (text.IndexOf(" nor ") > -1)
             {
-                text = text.Replace("false par false", "true");
-                text = text.Replace("false par true", "false");
-                text = text.Replace("true par false", "false");
-                text = text.Replace("true par true", "false");
+                text = text.Replace("false nor false", "true");
+                text = text.Replace("false nor true", "false");
+                text = text.Replace("true nor false", "false");
+                text = text.Replace("true nor true", "false");
             }
 
             return text;

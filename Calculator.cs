@@ -83,7 +83,7 @@ namespace LogicalFunctionsCalculator
 
         private void CButton_Click(object sender, EventArgs e) // можно оптимизировать
         {
-            string[] ms = new string[] { "true ", "false ", "or ", "xor ", "and ", "not ", " eqv", "imp ", "scs ", "par " };
+            string[] ms = new string[] { "true ", "false ", "nor ", "xor ", "nand ", "not ", "eqv ", "imp ", "and ", "or " };
 
             foreach (string i in ms)
             {

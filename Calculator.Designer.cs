@@ -44,8 +44,8 @@ namespace LogicalFunctionsCalculator
             this.ANDButton = new System.Windows.Forms.Button();
             this.CEButton = new System.Windows.Forms.Button();
             this.CButton = new System.Windows.Forms.Button();
-            this.PARButton = new System.Windows.Forms.Button();
-            this.SCSButton = new System.Windows.Forms.Button();
+            this.NORButton = new System.Windows.Forms.Button();
+            this.NANDButton = new System.Windows.Forms.Button();
             this.EquallyButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -98,8 +98,8 @@ namespace LogicalFunctionsCalculator
             this.tableLayoutPanel1.Controls.Add(this.ANDButton, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.CEButton, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.CButton, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PARButton, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.SCSButton, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.NORButton, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.NANDButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.EquallyButton, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 124);
@@ -222,27 +222,27 @@ namespace LogicalFunctionsCalculator
             this.CButton.UseVisualStyleBackColor = true;
             this.CButton.Click += new System.EventHandler(this.CButton_Click);
             // 
-            // PARButton
+            // NORButton
             // 
-            this.PARButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PARButton.Location = new System.Drawing.Point(111, 3);
-            this.PARButton.Name = "PARButton";
-            this.PARButton.Size = new System.Drawing.Size(102, 94);
-            this.PARButton.TabIndex = 2;
-            this.PARButton.Text = "par";
-            this.PARButton.UseVisualStyleBackColor = true;
-            this.PARButton.Click += new System.EventHandler(this.PARButton_Click);
+            this.NORButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NORButton.Location = new System.Drawing.Point(111, 3);
+            this.NORButton.Name = "NORButton";
+            this.NORButton.Size = new System.Drawing.Size(102, 94);
+            this.NORButton.TabIndex = 2;
+            this.NORButton.Text = "nor";
+            this.NORButton.UseVisualStyleBackColor = true;
+            this.NORButton.Click += new System.EventHandler(this.PARButton_Click);
             // 
-            // SCSButton
+            // NANDButton
             // 
-            this.SCSButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SCSButton.Location = new System.Drawing.Point(3, 3);
-            this.SCSButton.Name = "SCSButton";
-            this.SCSButton.Size = new System.Drawing.Size(102, 94);
-            this.SCSButton.TabIndex = 1;
-            this.SCSButton.Text = "scs";
-            this.SCSButton.UseVisualStyleBackColor = true;
-            this.SCSButton.Click += new System.EventHandler(this.SCSButton_Click);
+            this.NANDButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NANDButton.Location = new System.Drawing.Point(3, 3);
+            this.NANDButton.Name = "NANDButton";
+            this.NANDButton.Size = new System.Drawing.Size(102, 94);
+            this.NANDButton.TabIndex = 1;
+            this.NANDButton.Text = "nand";
+            this.NANDButton.UseVisualStyleBackColor = true;
+            this.NANDButton.Click += new System.EventHandler(this.SCSButton_Click);
             // 
             // EquallyButton
             // 
@@ -289,8 +289,8 @@ namespace LogicalFunctionsCalculator
         private System.Windows.Forms.Button ANDButton;
         private System.Windows.Forms.Button CEButton;
         private System.Windows.Forms.Button CButton;
-        private System.Windows.Forms.Button PARButton;
-        private System.Windows.Forms.Button SCSButton;
+        private System.Windows.Forms.Button NORButton;
+        private System.Windows.Forms.Button NANDButton;
         private System.Windows.Forms.Button EquallyButton;
     }
 }
